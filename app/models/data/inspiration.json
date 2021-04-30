@@ -1,0 +1,19 @@
+{
+  "header": {
+    "title": "Google Analytics Reporting API",
+    "subTitle": "With Plotly.JS",
+    "nav": {
+      "linkUrls": ["/about", "/inspiration"],
+      "linkText": ["About", "Inspiration"]
+    }
+  },
+  "main": {
+    "text": "Inspiration",
+    "section": {
+      "p1": "<p class='section__data-visual'><a href='https://d3js.org/'>D3.js</a><a href='https://www.informationisbeautifulawards.com/'>Information Is Beautiful</a><a href='https://public.tableau.com/en-us/gallery/?tab=viz-of-the-day&type=viz-of-the-day'>Tableau: Viz of the day</a><a href='https://threejs.org/'>Three.js</a></p>"
+    }
+  },
+  "footer": {
+    "text": "<div class=footer__copy>Google Analytics Reporting API - Inspiration</div>"
+  }
+}

@@ -1,0 +1,292 @@
+:root {
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  position: relative;
+  outline: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
+/* wrappers */
+
+.global-wrapper {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.component-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/* header */
+
+header {
+  padding: 0;
+  margin: 0 auto;
+  font-size: 2rem;
+  flex: 0 0 100%;
+}
+
+nav {
+  padding: 2rem 5rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.nav__item {
+  padding: 1rem 1rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav__logo {
+  fill: #ea178c;
+  width: 9rem;
+  height: auto;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+#orgLogo:hover {
+  text-decoration: none;
+  border: none;
+}
+
+.nav__item > .nav__link:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background: #ea178c;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: 0.25s linear;
+}
+
+.nav__item > .nav__link:hover:before,
+.nav__item > .nav__link:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.header__title {
+  padding: 5rem 1rem 1rem;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.header__subtitle {
+  padding: 0 1rem;
+  margin: 0 auto;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+/* main */
+
+main {
+  padding: 1rem 1rem;
+  margin: 1rem auto;
+  font-size: 2rem;
+  flex: 0 0 100%;
+}
+
+.main__title {
+  padding: 1rem 1rem;
+  margin: 1rem auto;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.main__data-visual {
+  padding: 1rem 1rem;
+  margin: 1rem auto;
+  font-size: 2rem;
+}
+
+/* Inspiration template */
+.main__data-visual a {
+  padding: 1rem 0;
+  margin: 1rem auto;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  align-content: start;
+  flex-wrap: wrap;
+}
+
+/* Inspiration template - section */
+
+#dataViz {
+  display: grid;
+  grid-template-rows: 8rem 1fr;
+}
+
+.section__date-range-wrapper {
+  display: grid;
+  grid-template-columns: 20rem 1fr 1fr 1fr;
+  justify-items: center;
+  grid-template-rows: 3rem 3rem;
+}
+
+.section__date-range {
+  font-size: 1.6rem;
+}
+
+#startDate {
+  grid-column: 2 / 4;
+  place-self: center start;
+}
+
+#endDate {
+  grid-column: 2 / 4;
+  place-self: center start;
+}
+
+@media (max-width: 576px) {
+  .section__date-range-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-rows: 3rem 3rem;
+  }
+
+  #startDate {
+    grid-column: 2 / 4;
+    place-self: center center;
+  }
+
+  #endDate {
+    grid-column: 2 / 4;
+    place-self: center center;
+  }
+}
+
+.section__data-visual {
+  padding: 1rem 1rem;
+  margin: 1rem auto;
+  font-size: 2rem;
+}
+
+.section__data-visual a {
+  padding: 1rem 0;
+  margin: 1rem auto;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  align-content: start;
+  flex-wrap: wrap;
+}
+
+/* footer */
+
+footer {
+  padding: 1rem 1rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  flex: 0 0 100%;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  padding: 1rem 1rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__copy {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.footer__logo {
+  fill: #ffffff;
+  width: 7rem;
+  height: auto;
+}
+
+#login {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+#login a {
+  text-decoration: underline;
+  color: black;
+  padding: 1rem;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+/* Progress bar */

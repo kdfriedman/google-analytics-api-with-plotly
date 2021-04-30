@@ -1,0 +1,21 @@
+{
+  "header": {
+    "title": "Google Analytics Reporting API",
+    "subTitle": "With Plotly.JS",
+    "nav": {
+      "linkUrls": ["/about", "/inspiration"],
+      "linkText": ["About", "Inspiration"]
+    }
+  },
+  "main": {
+    "text": "About",
+    "section": {
+      "p1": "<p class='section__data-visual'>This application is built with Node, Express and Plotly Graphing library (JS). The app attempts to authenticate each user via their Google account. If a valid authentication response is delivered from Google, the app takes the user's information and calls the Google Analytics Management API. With this request, the app checks if a particular authenticated user has valid permissions to access the Google Analytics Reporting API data.</p>",
+      "p2": "<p class='section__data-visual'>If the authorization check passes, the user's information is then used to send a request to the Google Analytics Reporting API. Once this data is sent back to the client it is then processed using Plotly.JS, a free open source interactive javascript graphing library. Plotly.js is built on d3.js and webgl and supports over 20 types of interactive charts.</p>",
+      "p3": "<p class='section__data-visual'>Each user's sessions is stored in a session store. A user's session will expire automatically after 1 day. Once a session is expired, a user will have to re-authenticate to gain access to the data.</p>"
+    }
+  },
+  "footer": {
+    "text": "<div class=footer__copy>Google Analytics Reporting API - About</div>"
+  }
+}

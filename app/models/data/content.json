@@ -1,0 +1,19 @@
+{
+  "header": {
+    "title": "Google Analytics Reporting API",
+    "subTitle": "With Plotly.JS",
+    "nav": {
+      "linkUrls": ["/about", "/inspiration"],
+      "linkText": ["About", "Inspiration"]
+    }
+  },
+  "main": {
+    "text": "Data Visualization",
+    "section": {
+      "p1": "<div id='plotlyParentElement'></div>"
+    }
+  },
+  "footer": {
+    "text": "<div class=footer__copy>Google Analytics Reporting API</div>"
+  }
+}
